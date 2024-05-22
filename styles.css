@@ -1,0 +1,333 @@
+:root {
+  --color-light-blue: #47ee41;
+  --color-dark-blue: #03318c;
+  --color-purple: #f5eef4;
+  --color-whihe: #ffffff;
+  --color-black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 60%;
+}
+
+body {
+  height: 630px;
+  /* Imagen de fondo y sus atributos*/
+  background-image: url("./image/poster.png") ;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: absolute;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family:  Tahoma, Sans-Serif;
+  line-height: 1;
+}
+
+/* Estilos para el header */
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 96px;
+  background-color: var(--color-dark-blue);
+}
+
+.header__logo {
+  width: 390px;
+}
+
+.header__shadow {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  bottom: -6px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Estilos para el main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+ }
+
+/* Sección agregar productos */
+
+.add-product__section {
+  width: 80%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.add-product__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  /* Color y sombreado del texto */
+  color:rgb(79, 19, 243);
+  text-shadow: 1px  0px 0px white,
+               0px  1px 0px white,
+              -1px  0px 0px white,
+               0px -1px 0px white;
+}
+
+.form__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 8px;
+  text-align: center;
+}
+
+.form__input {
+  height: 58px;
+  border: 3px solid var(--color-dark-blue);
+  border-radius: 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0 16px;
+  color: var(--color-dark-blue);
+}
+
+.form__input::placeholder {
+  color: var(--color-dark-blue);
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.button__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.button {
+  width: 50%;
+  height: 55px;
+  border: 3px solid var(--color-dark-blue);
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  border-radius: 16px;
+}
+
+.button__send {
+  background-color: var(--color-dark-blue);
+  color: var(--col-whihe);
+}
+
+.button__send:disabled {
+  background-color: rgb(79, 19, 243);
+}
+
+.button__clear {
+  background-color: var(--color-whihe);
+  color: var(--col-dark-blue);
+}
+
+/* Estilos para la lista productos */
+
+.list-products__section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.list-products__title {
+  margin-top: 40px;
+  font-size: 3.1rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  /* Color y sombreado del texto */
+  color:rgb(79, 19, 243);
+  text-shadow: 1px  0px 0px white,
+               0px  1px 0px white,
+              -1px  0px 0px white,
+               0px -1px 0px white;
+}
+
+.products__container {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px 20px;
+}
+
+.product__card {
+  height: 310px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark-blue);
+  border-radius: 30px;
+  padding: 35px;
+  border: 3px solid var(--color-black);
+  box-shadow: -3px 4px 14px 0px;
+  gap: 10px;
+}
+
+.product__img {
+  height: 174px;
+  object-fit: contain;
+  border: 3px solid var(--color-black);
+  border-radius: 5px;
+}
+
+.card-container--info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-container--info > p {
+  font-size: 1.5rem;
+  color: var(--color-whihe);
+}
+
+.card-container--value {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-container--value > p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--color-whihe);
+}
+
+.trash_icon:hover {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(13%) sepia(38%) saturate(7147%) hue-rotate(297deg) brightness(97%) contrast(111%);
+  transform: scale(1.2);
+}
+
+/* Estilos del footer */
+
+footer {
+  width: 100%;
+  background-color: var(--color-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 22px;
+}
+
+.dev__info {
+  color: var(--color-whihe);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.company__info {
+  color: var(--color-whihe);
+  font-size: 1.4rem;
+}
+
+.mensaje__titulo {
+  color: var(--color-dark-blue);
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.mensaje-error {
+  color: var(--color-purple);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.LogoGitHub {
+  width: 50px;
+  margin-left: 10px;
+  /* Este es el espacio entre el texto y el icono */
+  vertical-align: middle;
+  transition: all 1s;
+}
+
+.Logolinkendin {
+  width: 30px;
+  margin-left: 10px;
+  /* Este es el espacio entre el texto y el icono */
+  vertical-align: middle;
+  transition: all 1s;
+}
+
+/* Desde aquí empìezan los estilos para smartphones y  tablets */
+
+@media (min-width: 1024px) {
+  main {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .add-product__section {
+    margin-top: 30px;
+    width: 30%;
+  }
+
+  .button__container {
+    margin-bottom: 20px;
+  }
+
+  .list-products__section {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .list-products__title {
+    margin-top: 30px;
+  }
+
+  .products__container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    gap: 30px 16px;
+    max-height: 550px;
+    min-height: min-content;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-light-blue) var(--color-whihe);
+    margin-bottom: 200px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+

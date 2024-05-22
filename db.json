@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": "f730e943-92f9-4197-b5d3-07b22cfa050c",
+      "name": "DISCO DURO EXTERNO TOSHIBA 2 TERAS",
+      "price": "280",
+      "image_url": "https://technologystore2006.com/wp-content/uploads/2024/04/7DT37.webp"
+    },
+    {
+      "id": "0b16eedc-5e75-4082-87b9-0f2b3616f59f",
+      "name": "PORTÁTIL LENOVO  INTEL CELERON 8GB DDR4 256GB SSD 14\"",
+      "price": "400",
+      "image_url": "https://technologystore2006.com/wp-content/uploads/2024/04/6477a010c5b8d_2png-e1713394323222.webp"
+    },
+    {
+      "id": "7b93a5cb-f827-4823-99fa-8f26ca3048aa",
+      "name": "IMPRESORA MULTIFUNCIONAL BROTHER MFCT920DW",
+      "price": "275",
+      "image_url": "https://technologystore2006.com/wp-content/uploads/elementor/thumbs/Mfct920dw-BIOPRINT-2-qjh1l9zcf7mvk7tlz6meuf7tdsi8nkc7hjlyuz5suc.webp"
+    },
+    {
+      "id": "3db63c8f-c464-4f77-9eb5-8109aae116eb",
+      "name": "MONITOR HP OMEN 24\"",
+      "price": "245",
+      "image_url": "https://technologystore2006.com/wp-content/uploads/2024/01/7MH21.webp"
+    },
+    {
+      "id": "e4eeaf99-da4e-4889-84b2-7eca774b6fdc",
+      "name": "ROUTER LINKSYS EA7450 MAX-STREAM",
+      "price": "55",
+      "image_url": "https://technologystore2006.com/wp-content/uploads/2024/02/7CL18.jpg"
+    }
+  ]
+}
